@@ -1,11 +1,11 @@
 ﻿namespace OPPConcepts.Backend;
-
+                             //Class
 public class Date
-{
+{                            //Fields
     private int _year;
     private int _month;
     private int _day;
-
+                            //Constructors
     public Date()
     {
         _year = 1900;
@@ -19,7 +19,7 @@ public class Date
         Month = month;
         Day = day;
     }
-
+                            //Properties
     public int Year
     {
         get => _year;
@@ -37,7 +37,7 @@ public class Date
         get => _day;
         set => _day = ValidateDay(value);
     }
-
+                                //Methods
     public override string ToString()
     {
         return $"{Year:0000}/{Month:00}/{Day:00}";
