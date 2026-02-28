@@ -1,33 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="OPPConcepts.Backend.Date">
-    <Position X="4.5" Y="3.5" Width="1.75" />
+    <Position X="5.5" Y="4" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAJAAAAAAEAAEAAAMAAAAAAACEMAAAAAAAAAA=</HashCode>
       <FileName>Date.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OPPConcepts.Backend.Employee">
-    <Position X="5" Y="0.5" Width="1.5" />
+    <Position X="5.75" Y="0.5" Width="1.5" />
     <AssociationLine Name="BornDate" Type="OPPConcepts.Backend.Date" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="5" Y="2.812" />
-        <Point X="4.75" Y="2.812" />
-        <Point X="4.75" Y="3.5" />
+        <Point X="6.062" Y="3.017" />
+        <Point X="6.062" Y="3.267" />
+        <Point X="5.812" Y="3.267" />
+        <Point X="5.812" Y="4" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-0.879" Y="0.204" />
+        <Position X="0.151" Y="0.077" />
       </MemberNameLabel>
     </AssociationLine>
     <AssociationLine Name="HireDate" Type="OPPConcepts.Backend.Date" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="5" Y="2.562" />
-        <Point X="4.125" Y="2.562" />
-        <Point X="4.125" Y="4.403" />
-        <Point X="4.5" Y="4.403" />
+        <Point X="6.875" Y="3.017" />
+        <Point X="6.875" Y="3.392" />
+        <Point X="7" Y="3.392" />
+        <Point X="7" Y="4" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.005" Y="-0.296" />
+        <Position X="0.01" Y="0.102" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
@@ -38,34 +39,59 @@
       <Property Name="BornDate" />
       <Property Name="HireDate" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="OPPConcepts.Backend.SalaryEmployee">
-    <Position X="9.25" Y="0.5" Width="1.5" />
+    <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAQAAAA=</HashCode>
       <FileName>SalaryEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OPPConcepts.Backend.HourlyEmployee">
-    <Position X="8.75" Y="3.5" Width="1.75" />
+    <Position X="8.25" Y="3.75" Width="1.75" />
+    <InheritanceLine Type="OPPConcepts.Backend.Employee" FixedFromPoint="true">
+      <Path>
+        <Point X="7.25" Y="2.375" />
+        <Point X="7.55" Y="2.375" />
+        <Point X="7.55" Y="3.45" />
+        <Point X="9.125" Y="3.45" />
+        <Point X="9.125" Y="3.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AIAAAAAAAAQAAAAEAAwAAAAAAAABAAAIAAAAAAAAAAE=</HashCode>
       <FileName>HourlyEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OPPConcepts.Backend.CommisionEmployee">
-    <Position X="2" Y="0.5" Width="1.5" />
+    <Position X="2.75" Y="0.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>ACIAEAAAAAAAAAAEAAAABAAACAAAAAAIAAgAAAAAAAA=</HashCode>
       <FileName>CommisionEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OPPConcepts.Backend.BaseCommisionEmployee">
-    <Position X="0.5" Y="3.5" Width="1.5" />
+    <Position X="2.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAACAAAAAEAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>BaseCommisionEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="OPPConcepts.Backend.Invoice">
+    <Position X="12.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAAAAAgAAAFAAAAAAAAAAAAAAAJAAIggAAAgAA=</HashCode>
+      <FileName>Invoice.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="OPPConcepts.Backend.IPay">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>IPay.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
